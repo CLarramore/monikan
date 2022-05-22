@@ -12,7 +12,7 @@ init -990 python in mas_submod_utils:
 init -989 python:
     if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
         store.sup_utils.SubmodUpdater(
-            submod=store.mas_submod_utils.monikan
+            submod=store.mas_submod_utils.monikan,
             user_name="CLarramore",
             repository_name="monikan",
             update_dir=""
