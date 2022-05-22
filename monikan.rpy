@@ -3,7 +3,7 @@ init -990 python in mas_submod_utils:
         author="CLoggermore",
         name="Monikan", # Title is WIP
         description="Based off my perspectives of Monika",
-        version="0.0.1",
+        version="0.0.2",
         dependencies={},
         settings_pane=None,
         version_updates={}
