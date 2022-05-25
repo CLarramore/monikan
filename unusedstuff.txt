@@ -1,0 +1,42 @@
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="monika_po",
+            category=["testing"],
+            prompt="Poe Test",
+            pool=True,
+            unlocked=True
+        )
+    )
+
+
+label monika_po:
+    m 1tst "Fine... I'll try to escape."
+    m 1dfbfp "Hnnnnnn{nw}"
+    $ gltext = glitchtext(40)
+    $ style.say_dialogue = style.edited
+
+    stop sound
+    play sound "sfx/monikapound.ogg"
+    show m_rectstatic
+    show m_rectstatic2
+    show m_rectstatic3
+    pause 0.3
+    hide m_rectstatic
+    hide m_rectstatic2
+    hide m_rectstatic3
+    stop sound
+    play sound "sfx/s_kill_glitch1.ogg"
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    show noise onlayer front:
+        alpha 0.5
+        easeout 0.1 alpha 0
+    pause 0.1
+
+    hide screen tear
+    hide noise
+    m 1cub "[gltext]{nw}"
+    $ style.say_dialogue = style.normal
+    m 1wubso "Oh my!"
+return
