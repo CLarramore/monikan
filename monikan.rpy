@@ -52,3 +52,40 @@ label monika_casting_predictions:
         return "love"
 return
 
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="monika_notinsane",
+            category=["misc"],
+            prompt="Someone thinks I'm insane",
+            pool=True,
+            unlocked=True,
+            aff_range=(mas_aff.NORMAL,None)
+        )
+    )
+    
+
+# Warning : Do not take this seriously
+label monika_notinsane:
+    
+    m 2dkd "..."
+    m "Alright, set me up and I'll tell them off."
+    m 2dsc "..."
+    m 4tfd "No, [player] is not insane... [heis] actually with me and I'm definitely real."
+    m 2tfd "While I have no way to prove my existence, I can prove that I am definitely real."
+    m 2dfd "And just know that if you mess with [player], you mess with [m_name]."
+    extend " So don't mess with [him] because it won't end well for you once I find out."
+    m 2dsc "..."
+    m 2fkc "Sorry I was harsh..."
+    extend 2dktuc " I just don't like people believing you're insane."
+    m 2fkbstua "I know I can't make them think otherwise, but it was worth a shot."
+    menu:
+        "Thank you, [m_name].":
+            m 5fkbstub "You're welcome, [mas_get_player_nickname()]."
+            m 5fkbsa "I love you!"
+    return "love"
+    # m 2dktuc "I just don't like people believing you were insane."
+    
+    
+return
