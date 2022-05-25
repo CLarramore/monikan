@@ -6,17 +6,19 @@ init 5 python:
             category=["testing"],
             prompt="Poe Test",
             pool=True,
-            unlocked=True
+            unlocked=True,
+            aff_range=(mas_aff.AFFECTIONATE,None)
         )
     )
 
 
 label monika_po:
-    m 1tst "Fine... I'll try to escape."
+    m 1tsc "Fine... I'll try to escape."
     m 1dfbfp "Hnnnnnn{nw}"
     $ gltext = glitchtext(40)
     $ style.say_dialogue = style.edited
-
+    $ mas_RaiseShield_core()
+    
     stop sound
     play sound "sfx/monikapound.ogg"
     show m_rectstatic
@@ -36,7 +38,45 @@ label monika_po:
 
     hide screen tear
     hide noise
-    m 1cub "[gltext]{nw}"
+    
+    hide monika
+    show monika_body_glitch1 as mbgl zorder MAS_MONIKA_Z
+    
+    show screen tear(20,0.1,0.1,0,40)
+    play sound "sfx/s_kill_glitch1.ogg"
+    pause 0.3
+    stop sound
+    hide screen tear
+    pause 0.1
+    hide mbgl
+    show monika_body_glitch2 as mbgl2 zorder MAS_MONIKA_Z
+    show screen tear(30,0.1,0.1,0,40)
+    play sound "sfx/s_kill_glitch1.ogg"
+    pause 0.2
+    stop sound
+    hide screen tear
+    
+    m "{cps=*3}[gltext]{/cps}{w=.4}{nw}"
+    $ _history_list.pop()
+    
+    show screen tear(20,0.1,0.1,0,40)
+    play sound "sfx/s_kill_glitch1.ogg"
+    pause 0.1
+    stop sound
+    hide screen tear
+    hide mbgl2
+    show monika 6dkbfw zorder MAS_MONIKA_Z at i11
+    
     $ style.say_dialogue = style.normal
-    m 1wubso "Oh my!"
+    $ mas_resetTextSpeed()
+    $ mas_MUINDropShield()
+    $ enable_esc()
+    
+    m 6dkbfd "OW!"
+    extend 6nsp " That actually hurt.{fast}"
+    menu: 
+        "I'm sorry":
+            m 6tfp "You don't have to be. It's just..."
+            m 6dkt "It was my fault for trying." 
+            m "I'd rather not sacrifice myself just to escape."
 return
