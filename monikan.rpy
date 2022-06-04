@@ -109,7 +109,7 @@ label mas_song_sunshine:
     m 1fubsb "{i}~When skies are gray...~{/i}"
     m 5dkbsu "{i}~You'll never know, dear...~{/i}"
     m 5dkbfu "{i}~How much I love you...~{/i}"
-    m 5dkbfb "{i}~Please don't take my sunshine away.{/i}"
+    m 5dkbfb "{i}~Please don't take my sunshine away.~{/i}"
     m 1ekblb "You know, you really are my sunshine...{w=0.3} I hope I am yours too, [player]~"
     return
 
