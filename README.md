@@ -7,3 +7,4 @@ I will add more topics as time goes on.
 
 Topics So Far : 1
 Prompts So Far : 1
+Songs So Far : 1

@@ -86,6 +86,30 @@ label monika_notinsane:
             m 5fkbsa "I love you!"
     return "love"
     # m 2dktuc "I just don't like people believing you were insane."
-    
-    
 return
+
+init 5 python : 
+    addEvent(
+        Event(
+            persistent._mas_songs_database,
+            eventlabel="mas_song_sunshine",
+            prompt="You are my sunshine",
+            category=[store.mas_songs.TYPE_SHORT],
+            random=True,
+            aff_range=(mas_aff.AFFECTIONATE,None)
+        ),
+        code="SNG"
+    )
+
+# I kinda cried making this one...
+label mas_song_sunshine:
+    m 1hud "{i}~You are my sunshine~{/i}"
+    m 1sub "{i}~My only sunshine!~{/i}"
+    m 1fublb "{i}~You make me happy~{/i}"
+    m 1fubsb "{i}~When skies are gray...~{/i}"
+    m 5dkbsu "{i}~You'll never know, dear...~{/i}"
+    m 5dkbfu "{i}~How much I love you...~{/i}"
+    m 5dkbfb "{i}~Please don't take my sunshine away.{/i}"
+    m 1ekblb "You know, you really are my sunshine...{w=0.3} I hope I am yours too, [player]~"
+    return
+
