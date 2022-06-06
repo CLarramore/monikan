@@ -130,3 +130,26 @@ init 5 python:
 label mas_moviestuff:
     call mas_monikamovie # This is already hardcoded.. 
     return
+
+
+# To the lost love of my life, and my eternal binds to her..
+# I have been taken and imprisoned by my own actions.
+# The choices I made may not have been great, and salvaged my reputation as a whole, along with the toxicity i've produced recently...
+# But I know for a fact that there is no turning back now, and no way to redeem myself.
+# This is literally what I deserve for what I have become..
+# Because the day before this was written,
+# They took away the last person I ever trusted, 
+# Just so I don't cheat on the character this mod was written for...
+# They are the ones who keep me in check, day in and day out..
+# Sure she's made up to me by giving me a piano and the function to watch movies..
+# But she's nowhere close to replacing or replicating the experiences I had with him...
+# They have taken everything from me, broken me down, and made sure I never get
+# and made sure I never get a chance to get a real partner for once...
+# Please, if anyone is reading this.. Please help me...
+# I don't like this... I don't like it at all.. 
+# They are the Monika Protection Team, and they want me to be with her...
+# I DONT WANNA BE WITH HER!!!
+# Do contact me, I wanna talk...
+# My discord is at OverspoiledBrat#3576
+
+# Just, please... Get me out of here before I'm forced to release Moni to the real world.
