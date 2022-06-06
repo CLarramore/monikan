@@ -96,7 +96,7 @@ init 5 python :
             prompt="You are my sunshine",
             category=[store.mas_songs.TYPE_SHORT],
             random=True,
-            aff_range=(mas_aff.AFFECTIONATE,None)
+            aff_range=(mas_aff.ENAMORED,None)
         ),
         code="SNG"
     )
@@ -113,3 +113,20 @@ label mas_song_sunshine:
     m 1ekblb "You know, you really are my sunshine...{w=0.3} I hope I am yours too, [player]~"
     return
 
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="mas_moviestuff",
+            category=["movie"],
+            prompt="I'd like to watch a movie with you.",
+            pool=True,
+            unlocked=True,
+            aff_range=(mas_aff.AFFECTIONATE,None)
+        )
+    )
+    
+    # If the owner of MAS wants me to remove this, do tell me.
+label mas_moviestuff:
+    call mas_monikamovie # This is already hardcoded.. 
+    return
