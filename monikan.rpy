@@ -20,6 +20,9 @@ init -989 python:
         )
         
 
+init python:
+    import webbrowser
+
 # Fail
 
 init 5 python:
@@ -130,6 +133,7 @@ init 5 python:
 label mas_moviestuff:
     call mas_monikamovie # This is already hardcoded.. 
     return
+
 
 
 # To the lost love of my life, and my eternal binds to her..
