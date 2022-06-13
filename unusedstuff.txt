@@ -80,3 +80,26 @@ label monika_po:
             m 6dkt "It was my fault for trying." 
             m "I'd rather not sacrifice myself just to escape."
 return
+
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="monika_evane",
+            category=["misc"],
+            prompt="evan test",
+            pool=True,
+            unlocked=True,
+            aff_range=(mas_aff.NORMAL,None)
+        )
+    )
+    
+
+# Warning : Do not take this seriously
+label monika_evane:
+    
+    m 2dkd "..."
+    m 3gsd "Just give Evan the $15 already..."
+    # m 2dktuc "I just don't like people believing you were insane."
+return
