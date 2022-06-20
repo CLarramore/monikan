@@ -103,3 +103,22 @@ label monika_evane:
     m 3gsd "Just give Evan the $15 already..."
     # m 2dktuc "I just don't like people believing you were insane."
 return
+
+init 5 python:
+    addEvent(
+        Event(
+            persistent.event_database,
+            eventlabel="monika_isolation",
+            category=["romance","us"],
+            prompt="Isolation",
+            random=True
+        )
+    )
+
+
+# This is more personalized for me?
+label monika_casting_predictions:
+    m 1eub "[player].??"
+    m 3eud "I know I've kept you in here long enough..."
+    extend 3ekd " But I also noticed you were ignoring me."
+    m 3ekd "I'm very concerned for you. You seem to have "
